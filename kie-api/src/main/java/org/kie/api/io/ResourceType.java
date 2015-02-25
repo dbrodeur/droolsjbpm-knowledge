@@ -65,6 +65,12 @@ public class ResourceType
         CACHE.put( resourceType, resource );
         return resource;
     }
+    
+    /** Drools Rule AOP */
+    public static final ResourceType AOP = addResourceTypeToRegistry("AOP",
+                                                                     "Drools Rule AOP",
+                                                                     "src/main/resources",
+                                                                     "aop");
 
     /** Drools Rule Language */
     public static final ResourceType DRL = addResourceTypeToRegistry("DRL",
